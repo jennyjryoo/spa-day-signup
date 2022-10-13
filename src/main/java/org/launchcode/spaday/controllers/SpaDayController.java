@@ -11,7 +11,7 @@ import java.util.ArrayList;
 @Controller
 public class SpaDayController {
 
-    @GetMapping
+    @GetMapping("/")
     public String customerForm () {
         return "serviceSelection";
     }
