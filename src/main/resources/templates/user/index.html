@@ -9,5 +9,9 @@
 
     <a th:href="@{~/}">Take me to the menu!</a>
 
+<ul>
+    <li th:each="user : ${users}"><p th:text="${user.username}"></p><a th:href="@{user/{id}(id=${user.id})}">Profile</a></li>
+</ul>
+
 </body>
 </html>
